@@ -1,0 +1,12 @@
+<!--
+ - Created by a846761 on 2/15/2022.
+ -->
+
+<apex:page >
+    <apex:pageBlock title="User Status">
+        <apex:pageBlockSection columns="2">
+            {! $User.FirstName & ' ' & $User.LastName }
+            ({! $User.Username })
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,16 @@
+<!--
+ - Created by a846761 on 2/16/2022.
+ -->
+
+<apex:page id="NewCaseList" controller="NewCaseListController">
+    <apex:pageBlock title="List Case" id="id_list_case">
+        <apex:repeat value="{! newCases}" var="case" rendered="true" id="id_list_case">
+            <li>
+                <apex:outputLink value="/{! case.ID}" id="recordID">
+                    <apex:outputText value="{! case.CaseNumber }" />
+                </apex:outputLink>
+            </li>
+        </apex:repeat>
+    </apex:pageBlock>
+
+</apex:page>

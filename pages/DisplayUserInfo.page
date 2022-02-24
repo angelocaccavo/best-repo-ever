@@ -1,0 +1,11 @@
+<!--
+ - Created by a846761 on 2/15/2022.
+ -->
+
+<apex:page id="DisplayUserInfo">
+    <apex:pageBlock title="DetUser">
+        <apex:pageBlockSection columns="1">
+               {! $User.FirstName}
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

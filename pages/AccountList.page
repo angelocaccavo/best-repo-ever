@@ -1,0 +1,26 @@
+<!--
+ - Created by a846761 on 2/16/2022.
+ -->
+
+<apex:page standardController="Account" recordSetVar="accounts">
+    <apex:pageBlock title="Account List">
+        <!--Accounts List-->
+        <apex:repeat value="{! accounts}" var="a" rendered="true" id="account_list">
+            <!--
+            <apex:pageBlockSection title="{! a.Name }">
+                <apex:pageBlockTable value="{! a.contacts }" var="con">
+                    <apex:column value="{! con.Title }"/>
+                    <apex:column value="{! con.FirstName }"/>
+                    <apex:column value="{! con.LastName }"/>
+                    <apex:column value="{! con.Email }"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            -->
+            <li>
+                <apex:outputLink value="/{! a.ID}" id="recordID">
+                    <apex:outputText value="{! a.Name }" />
+                </apex:outputLink>
+            </li>
+        </apex:repeat>
+    </apex:pageBlock>
+</apex:page>

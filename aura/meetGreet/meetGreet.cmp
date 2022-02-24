@@ -1,0 +1,7 @@
+<!--
+ - Created by a846761 on 2/16/2022.
+ -->
+
+<aura:component description="meetGreet">
+    <p>Greetings, fellow humans! What’s your status?</p>
+</aura:component>
